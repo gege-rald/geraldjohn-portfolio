@@ -26,11 +26,11 @@ export default function Home() {
       </button>
 
       <p className="font-label text-faint mb-4">design system test</p>
-      <h1 className="font-display text-hero text-primary mb-8">
+      <h1 className="font-display text-hero font-normal text-primary mb-8">
         Gerald John<br />
         <span className="text-muted">Mengg AI.</span>
       </h1>
-      <p className="font-mono text-sm text-muted max-w-md leading-[1.7]">
+      <p className="font-body text-sm text-muted max-w-md leading-[1.7]">
         Dark background. White headline. Gray subtext.
         No color anywhere. Grain texture visible.
         Phase 0 done.

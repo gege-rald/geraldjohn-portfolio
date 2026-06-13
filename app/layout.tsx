@@ -1,17 +1,34 @@
 import type { Metadata } from "next";
-import { Inter_Tight, JetBrains_Mono } from "next/font/google";
+import {
+  Inter,
+  IBM_Plex_Mono,
+  Orbitron,
+  Manrope,
+} from "next/font/google";
 import "./globals.css";
 
-const interTight = Inter_Tight({
+// Variable Inter — text optical size for UI/body; use opsz 32 (Display) on large headlines
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["300", "400", "500"],
+  variable: "--font-inter",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
   weight: ["400", "500"],
+});
+
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  variable: "--font-accent",
+  weight: ["800"],
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +43,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${interTight.variable} ${jetbrainsMono.variable}`}>
+      <body
+        className={`font-inter ${inter.variable} ${ibmPlexMono.variable} ${orbitron.variable} ${manrope.variable}`}
+      >
         {children}
       </body>
     </html>

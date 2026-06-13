@@ -10,8 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["var(--font-display)", "system-ui", "sans-serif"],
+        display: ["var(--font-inter)", "system-ui", "sans-serif"],
+        inter: ["var(--font-inter)", "system-ui", "sans-serif"],
+        body: ["var(--font-body)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
+        accent: ["var(--font-accent)", "sans-serif"],
+        code: ["Geist Mono", "monospace"],
       },
       colors: {
         // Dark mode surfaces
